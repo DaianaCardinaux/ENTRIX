@@ -20,8 +20,10 @@
     z-index: 3;
 }
 
-.navbar-toggler {
-    color: white;
+/* filter invert es para invertir el color del menu hamburguesa ya que es la unica manera que encontre de hacerlo
+ya que boostrap ya tiene definido estilos  */
+.navbar-toggler-icon {
+    filter: invert(1)
 }
 
 .navbar {
@@ -43,7 +45,6 @@
 
 .navbar-brand {
     width: 200px;
-    margin-top: -10px;
 }
 
 .navbar .nav-link {
@@ -66,7 +67,7 @@
 /*show un selector de bootstrap para que solo se muestre cuando se despliegue*/
 .menuFondo.show {
     transition: 0.5;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.5); 
     margin: 5px 0 0 0;
 }
 
@@ -105,4 +106,56 @@
 .entrixFooter {
     color: #48A6A7;
     font-weight: 500;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        position: relative;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .navbar .nav-link {
+        font-size: 15px;
+    }
+
+    .navContainer {
+        height: auto;
+    }
+
+    .navbar-brand {
+        width: 30%;
+    }
+
+    .footerContainer {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .parrafoFooter {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        width: 150px;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        margin: 0;
+        padding: 8px;
+    }
 }
