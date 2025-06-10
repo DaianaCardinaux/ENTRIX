@@ -13,3 +13,10 @@ botones.forEach(boton => {
         }
     });
 });
+
+const myCarousel = document.querySelector('#carouselExampleSlidesOnly');
+const carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 3000,
+  ride: 'carousel'
+});
+
