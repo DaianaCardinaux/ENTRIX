@@ -76,11 +76,23 @@ ya que boostrap ya tiene definido estilos  */
 /* FOOTER */
 
 .footerContainer {
-    background-color: #000000; 
-    height: 250px;
-    
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    height: auto;
     color: white;
     font-size: 20px;
+    background-color: #000000; 
+}
+
+.footerInfo, .footerContacto {
+    max-width: 300px;
+}
+
+.iconText {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .parrafoFooter {
@@ -92,6 +104,7 @@ ya que boostrap ya tiene definido estilos  */
     display: flex;
     justify-content: center;
     align-content: center;
+    text-align: center;
 
     background-color: #050505; 
     height: 40px;
@@ -101,6 +114,7 @@ ya que boostrap ya tiene definido estilos  */
 .derechosTitulo {
     padding: 5px;
     letter-spacing: 1px;
+    color: white;
 }
 
 .entrixFooter {
@@ -133,14 +147,22 @@ img, video {
     }
 
     .footerContainer {
-        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
         height: auto;
     }
 
-    .parrafoFooter {
-        width: 90%;
-        padding: 20px;
+    .footerInfo, .footerContacto {
+        margin-bottom: 15px;
     }
+
+    .footerContainer p {
+        padding: 0;
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
