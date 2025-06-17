@@ -69,41 +69,31 @@
 
 /* ------------------ ACADEMICO Y VIDEO ----------------------- */
 
-.titulo {
+.videoContainer {
+    height: 400px; 
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-content: center;
-
-    margin: 50px 0 50px 0;
-
-    font-size: 50px;
-    color: #2973B2;
-
-    letter-spacing: 2px;
+    justify-content: center;  
+    align-items: center;     
 }
 
-.VideoContainer {
-    margin: 50px 0 50px 0;
-    height: 700px;
-    background-color: #9ACBD0;
-
-    box-shadow: 
-        0 -2px 20px 1px rgba(103, 172, 204, 0.185), 
-        0 2px 20px 1px rgba(103, 172, 204, 0.185);  
+.video {
+    height: 600px;
+    width: 80%;
+    box-shadow: 0 2px 20px 1px rgba(103, 172, 204, 0.185);
 }
 
 .AcademicoContainer{
-    margin: 50px;
-    height: 100%;
-    background-color: #9ACBD0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 
-    box-shadow: 
-        0 -2px 20px 1px rgba(103, 172, 204, 0.185), 
-        0 2px 20px 1px rgba(103, 172, 204, 0.185);  
+    margin: 50px;
+    box-shadow: 0 2px 20px 1px rgba(103, 172, 204, 0.185);  
 }
 
 .posterAcademico {
-    width: 100%;
+    width: 80%;
 }
 
 /* ------------------ NOSOTROS ----------------------- */
@@ -248,6 +238,10 @@ input, textarea {
     .equipo {
         margin-bottom: 40px;
     }
+
+    .video {
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -261,6 +255,10 @@ input, textarea {
 
     input, textarea {
         width: 90%;
+    }
+
+    .video {
+        height: 400px;
     }
 }
 
