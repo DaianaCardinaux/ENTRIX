@@ -74,7 +74,8 @@
     width: 100%;
     display: flex;
     justify-content: center;  
-    align-items: center;     
+    align-items: center;   
+    margin: 100px 0 100px 0;  
 }
 
 .video {
