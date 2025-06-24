@@ -26,7 +26,7 @@
 .pregunta {
     padding: 10px;
     background-color: #48A6A7;
-    color: #164e80;
+    color: #10416b;
 
     font-size: 25px;
     letter-spacing: 1px;
@@ -35,8 +35,9 @@
     border-color: #164e80;
     border-style: ridge;
     border-width: 2px;
+    border-radius: 10px;
     
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.363);
 
     margin: 30px 0 30px 0;
 
@@ -215,6 +216,11 @@ input, textarea {
 .botonEnviar:hover {
     background-color: #3b8d8e;
     transition: 0.3s;
+}
+
+#enviado {
+    font-size: 17px;
+    padding: 30px;
 }
 
 @media screen and (max-width: 991px) {
