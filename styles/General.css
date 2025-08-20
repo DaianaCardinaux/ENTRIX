@@ -188,7 +188,6 @@
     color: #2973B2;
     text-align: center;
     letter-spacing: 1px;
-
 }
 
 input, textarea {
@@ -252,10 +251,6 @@ input, textarea {
 }
 
 @media screen and (max-width: 600px) {
-    .contactoForm {
-        padding: 30px;
-    }
-
     .Contacto {
         font-size: 20px;
     }
@@ -266,6 +261,26 @@ input, textarea {
 
     .video {
         height: 400px;
+    }
+
+    .pregunta {
+        font-size: 17px;
+    }
+
+    .respuesta.visible {
+        margin: -35px 10px 0px 10px; 
+        padding: 20px 10px 0 10px;
+        font-size: 15px;
+    }
+
+    .contactoForm {
+        width: 90%;
+        padding: 15px 2px;
+        margin: 50px 0;
+    }
+
+    .Contacto, input, textarea {
+        margin-bottom: -10px;
     }
 }
 

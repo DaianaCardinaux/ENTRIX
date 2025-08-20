@@ -203,8 +203,8 @@ li {
     }
 
     .Resumen {
-        padding: 20px;
-        margin: 30px 10px;
+        padding: 0px;
+        margin: 30px 5px;
     }
 
     .itemsEntrix {
@@ -216,13 +216,26 @@ li {
         width: 100%;
         font-size: 20px;
     }
+
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+    .parrafoResumen {
+        margin: 40px 5px;
+    }
+
+    .Resumen {
+        padding: 0px;
+    }
+    .parrafoResumen {
+        font-size: 15px;
+        padding: 0 5px;
+    }
 }
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .parrafoResumen {
-        margin: 40px 60px;
-    }
 
     .columna {
         width: 45%;
